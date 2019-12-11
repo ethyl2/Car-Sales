@@ -1,6 +1,8 @@
 import React from 'react';
+import { connect } from 'react-dom';
 
 import AddedFeature from './AddedFeature';
+
 
 const AddedFeatures = props => {
   return (
@@ -19,4 +21,9 @@ const AddedFeatures = props => {
   );
 };
 
-export default AddedFeatures;
+const mapStateToProps = state => {
+  return {
+    car: state.car
+  }
+}
+export default connect(mapStateToProps, {})(AddedFeatures);
