@@ -13,7 +13,7 @@ const AddedFeatures = props => {
           {props.car.features.map(item => {
             console.log("Time to make an AddedFeature");
             return (
-            <AddedFeature key={item.id} feature={item} />
+            <AddedFeature key={item.id} feature={item} removeItem={props.removeItem} />
           )})}
         </ol>
       ) : (

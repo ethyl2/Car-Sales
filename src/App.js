@@ -27,7 +27,7 @@ const App = (props) => {
   };
   */
 
-  const removeFeature = item => {
+  const removeItem = item => {
     // dispatch an action here to remove an item
     props.removeFeature(item);
   };
@@ -42,7 +42,7 @@ const App = (props) => {
     <div className="boxes">
       <div className="box">
         <Header car={props.car} />
-        <AddedFeatures car={props.car} />
+        <AddedFeatures car={props.car} removeItem={removeItem} />
       </div>
       <div className="box">
         <AdditionalFeatures additionalFeatures={props.additionalFeatures} buyItem={buyItem} />
