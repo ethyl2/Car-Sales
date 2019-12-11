@@ -10,9 +10,11 @@ const AddedFeatures = props => {
       <h6>Added features:</h6>
       {props.car.features.length ? (
         <ol type="1">
-          {props.car.features.map(item => (
+          {props.car.features.map(item => {
+            console.log("Time to make an AddedFeature");
+            return (
             <AddedFeature key={item.id} feature={item} />
-          ))}
+          )})}
         </ol>
       ) : (
         <p>You can purchase items from the store.</p>
