@@ -8,7 +8,7 @@ const Header = props => {
         <img src={props.car.image} alt={props.car.name} />
       </figure>
       <h2 className='has-text-weight-bold'>{props.car.name}</h2>
-      <p className='has-text-primary'>Amount: ${props.car.price}</p>
+      <p className='has-text-primary'>Base Amount: ${props.car.price}</p>
     </div>
   );
 };

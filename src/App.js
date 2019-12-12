@@ -41,12 +41,12 @@ const App = (props) => {
   return (
     <div className="boxes">
       <div className="box">
-        <Header car={props.car} />
-        <AddedFeatures car={props.car} removeItem={removeItem} />
+        <Header />
+        <AddedFeatures removeItem={removeItem} />
       </div>
       <div className="box">
-        <AdditionalFeatures additionalFeatures={props.additionalFeatures} buyItem={buyItem} />
-        <Total car={props.car} additionalPrice={props.additionalPrice} />
+        <AdditionalFeatures buyItem={buyItem} />
+        <Total />
       </div>
     </div>
   );
